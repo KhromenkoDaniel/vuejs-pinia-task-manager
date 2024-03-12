@@ -26,13 +26,14 @@ body {
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 16px;
-	letter-spacing: 0em;
+	letter-spacing: 0;
 	text-align: left;
 	cursor: pointer;
 	text-decoration: none;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	
 }
 
 .btn.primary {
@@ -53,4 +54,11 @@ body {
 .close-btn {
 	width: 14px;
 	height: 14px;
+}
+
+@media (max-width: 620px) {
+	.btn {
+		width: 100%;
+		margin: 0 calc(20% - 40px);
+	}
 }

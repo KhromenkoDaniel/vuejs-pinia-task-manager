@@ -52,9 +52,19 @@ store.$subscribe((mutation, state) => {
   justify-content: space-between;
   align-items: center;
 
+  @media (max-width: 620px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+
   .header-side {
     display: flex;
     align-items: center;
+
+    @media (max-width: 620px) {
+      justify-content: center;
+      width: 100%;
+    }
 
     h1 {
       text-transform: capitalize;
@@ -63,10 +73,10 @@ store.$subscribe((mutation, state) => {
       line-height: 47px;
       letter-spacing: 0;
       text-align: left;
-    }
 
-    .secondary {
-      margin-left: 12px;
+      @media (max-width: 620px) {
+        font-size: 32px;
+      }
     }
   }
 
